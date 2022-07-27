@@ -17,9 +17,36 @@ body{
 /* header */
 /* /header */
 
-
+.flex{
+    display: flex;
+}
 /* main */
+.web-app{
+    height: 100vh;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+}
+
+.menu{
+    background-color: aqua;
+    width: 200px;
+}
+
+.content{
+    background-color: blueviolet;
+    flex-grow: 1;
+
+}
 /* /main */
 
 /* footer */
+footer{
+    background-color: blue;
+    height: 10vh;
+}
 /* /footer */
