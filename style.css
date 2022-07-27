@@ -10,6 +10,8 @@ body{
     font-family: sans-serif;
 }
 
+
+
 /****** content *******/
 
 
@@ -20,10 +22,11 @@ body{
 .flex{
     display: flex;
 }
+
+
 /* main */
 .web-app{
     height: 100vh;
-
 }
 
 .container{
@@ -32,10 +35,90 @@ body{
     height: 90vh;
 }
 
-.menu{
-    background-color: aqua;
+
+/* aside */
+aside{
+    background-color: black;
     width: 200px;
 }
+
+
+#logo-spotify{
+    width: 70%;
+    padding-left: 20px;
+    margin-top: 20px;
+    color: #a3a3a3;
+}
+
+#home-spotify{
+    width: 10%;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #a3a3a3;
+}
+
+#search-spotify{
+    width: 10%;
+    margin-left: 20px;
+    margin-top: 5px;
+    color: #a3a3a3;
+}
+
+h4{
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.fa-square-plus{
+    color: #a3a3a3;
+    margin-left: 20px;
+    padding-top: 10px;
+    font-size: 35px;
+}
+.playlist p{
+    color: #a3a3a3;
+    margin-left: 20px;
+    padding-top: 15px;
+    font-size: 0.8rem;
+}
+
+#profile-logo{
+    width: 20px;
+    height: 20px;
+    background-color: #a3a3a3;
+    border-radius: 24px;
+    margin-left: 23px;
+}
+
+.profile p{
+    color: #a3a3a3;
+    font-size: 0.8rem;
+    padding-right: 60px;
+    padding-top: 3px
+}
+
+#text-profile{
+    padding-right: 75px;
+}
+
+#download-logo{
+    width: 10%;
+    margin-left: 20px;
+    color: #a3a3a3;
+}
+
+hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.profile{
+    margin-top: 140px;
+}
+
+
+
+/* content */
 
 .content{
     background-color: blueviolet;
@@ -45,8 +128,5 @@ body{
 /* /main */
 
 /* footer */
-footer{
-    background-color: blue;
-    height: 10vh;
-}
+
 /* /footer */
