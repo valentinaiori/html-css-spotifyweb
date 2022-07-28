@@ -165,23 +165,27 @@ main{
 .card{
     display: flex;
     flex-direction: row;
+
 }
 
 .card-album img{
     width: 150px;
-    padding-left: 20px;
 }
 
 h3{
     color: white;
-    padding-left: 60px;
 }
 
 .text-card{
     text-align: center;
     font-size: 0.9rem;
+
 }
 
+.card-album{
+    padding-left: 20px;
+    padding-right: 20px;
+}
 .card-album span{
     color: #a3a3a3;
 }
