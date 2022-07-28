@@ -34,18 +34,33 @@ aside{
     width: 150px;
     padding-left: 20px;
     margin-top: 20px;
+    margin-bottom: 10px;
     color: #a3a3a3;
+}
+
+.menu a{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: #a3a3a3;
+}
+
+.menu span{
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 0.8rem;
 }
 
 #home-spotify{
     width: 20px;
     margin-left: 20px;
-    margin-top: 15px;
+    margin-top: 8px;
     color: #a3a3a3;
 }
 
 #search-spotify{
     width: 20px;
+    margin-top: 8px;
     margin-left: 20px;
     color: #a3a3a3;
 }
@@ -54,9 +69,8 @@ aside{
     width: 20px;
     margin-left: 20px;
     color: #a3a3a3;
-    margin-top: 6px;
+    margin-top: 8px;
 }
-
 
 h4{
     color: white;
@@ -66,15 +80,23 @@ h4{
 
 .fa-square-plus{
     color: #a3a3a3;
-    margin-left: 20px;
     padding-top: 10px;
     font-size: 35px;
 }
 
-.playlist p{
+.playlist span{
     color: #a3a3a3;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+.playlist a{
+    text-decoration: none;
+    color: #a3a3a3;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
     margin-left: 20px;
-    padding-top: 15px;
     font-size: 0.8rem;
 }
 
@@ -87,25 +109,27 @@ h4{
     height: 20px;
     background-color: #a3a3a3;
     border-radius: 24px;
-    margin-left: 23px;
-}
-
-.profile p{
-    color: #a3a3a3;
-    font-size: 0.8rem;
-    padding-right: 60px;
-    padding-top: 3px
-}
-
-#text-profile{
-    padding-right: 75px;
+    margin-left: 20px;
 }
 
 #download-logo{
     width: 30px;
     margin-left: 20px;
     color: #a3a3a3;
+    margin-left: 15px;
 }
+
+.profile a{
+    text-decoration: none;
+    color: #a3a3a3;
+}
+
+.profile span{
+    margin-top: 20px;
+
+}
+
+
 
 hr{
     margin-top: 10px;
@@ -113,18 +137,32 @@ hr{
 }
 
 
-/* content */
+/* main */
 
 main{
     background-color: #141922;
     flex-grow: 1;
-    position: relative;
-
 }
+
+#album-container{
+    overflow-y: auto;
+    padding-top: 100px;
+}
+
+.title a{
+    text-align: center;
+    text-decoration: none;
+    color: 333;
+}
+
+
+
+
+/* header */
 
 header{
     opacity: 80%;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     width: 100%;
@@ -143,10 +181,9 @@ header a{
     text-decoration: none;
 }
 
-#album-container{
-    overflow-y: auto;
-    height: 100vh;
-}
+/* /header */
+
+
 
 /* /main */
 
