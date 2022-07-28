@@ -12,20 +12,19 @@
 </head>
 <body>
     <div class="web-app">
-            <div class="container">
+            <div class="app-container">
                 <aside>
                     <div class="menu">
                         <div>
                             <img id="logo-spotify" src="img/logo.svg" alt="Logo-spotify"> 
                         <div class="flex">
                             <img id="home-spotify" src="img/home.svg" alt="Home-spotify">
-                            <p>Home</p>
                         </div>
                         <div>
                             <img id="search-spotify" src="img/search.svg" alt="Search-spotify">
                         </div>
                         <div>
-                            <img id="search-spotify" src="img/libreria.svg" alt="Libreria-spotify">
+                            <img id="libreria-spotify" src="img/libreria.svg" alt="Libreria-spotify">
                         </div>
                     </div>
                     </div>
@@ -41,33 +40,36 @@
                         <p>Nome playlist</p>
                     </div>
                         <div class="profile">
-                            <div class="flex">
+                            <div>
                                 <img id="download-logo" src="img/download.svg" alt="download-logo">
                                 <p>Installa app</p>
                             </div>
                             <hr>
-                            <div class="flex"> 
+                            <div> 
                                 <img id="profile-logo" src="img/profile.svg" alt="Profile">
                                 <p id="text-profile">John Doe</p>
                             </div>
-                            
                         </div>
                 </aside>
-
-                <div class="content">
-                    <div>
-                        <button id="button-upgrade">EFFETTUA L'UPGRADE</button>
+            <main>
+                 <header>
+                    <a href="#">EFFETTUA L'UPGRADE</a>
+                </header>
+                <div id="album-container">
+                    <div class="title">
+                        <a href="#">IN EVIDENZA</a>
+                        <a href="#">PODCAST</a>
+                        <a href="#">CLASSIFICHE</a>
+                        <a href="#">GENERI E MOOD</a>
+                        <a href="#">NUOVE USCITE</a>
+                        <a href="#">SCOPRI</a>
                     </div>
                 </div>
-
-                
-
-
-            </div>
+            </main>
+        </div>
 
         <!-- footer-->
         <footer class="flex">
-           
             <div class="icon-sx">
                 <img src="img/sinister.jpeg" alt="img-sinister">
                 <i class="fa-solid fa-heart"></i>
@@ -86,14 +88,9 @@
                 <i class="fa-solid fa-list"></i>
                 <i class="fa-solid fa-display"></i>
                 <i class="fa-solid fa-volume-high"></i>
-
             </div>
-
         </footer>
         <!-- /footer-->
-    </div>
-    
-    
-    
+ </div>  
 </body>
 </html>
