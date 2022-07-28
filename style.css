@@ -175,12 +175,15 @@ main{
 h3{
     color: white;
     padding-left: 60px;
+}
+
+.text-card{
+    text-align: center;
     font-size: 0.9rem;
 }
 
 .card-album span{
     color: #a3a3a3;
-    padding-left: 90px;
 }
 
 h2{
