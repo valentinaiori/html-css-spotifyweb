@@ -55,6 +55,8 @@ aside{
     font-size: 0.8rem;
 }
 
+
+
 #home-spotify{
     width: 20px;
     margin-left: 20px;
@@ -166,6 +168,10 @@ header a{
     margin-right: 25px;
 }
 
+header a:hover{
+    
+}
+
 /* /header */
 
 main{
@@ -194,11 +200,6 @@ main{
     font-size: 0.9rem;
     padding-right: 20px;
     margin-bottom: 20px;
-}
-
-.title :hover{
-    text-decoration: underline 2px solid #adff2f;
-
 }
 
 .card{
@@ -262,6 +263,7 @@ footer{
 
 footer img{
     width: 50px;
+    padding-right: 5px;
 }
 
 .icon-sx{
@@ -415,6 +417,26 @@ footer img{
 
     footer{
         width: 100%;
-    }
-    
+    }   
 }
+
+
+/* hover */
+
+       /* hover aside */
+
+.menu span:hover, .playlist a:hover, .playlist span:hover, .profile span:hover{
+    color: white;
+}
+
+       /* /hover aside */
+
+
+       /* hover main */
+
+.title :hover{
+    text-decoration: underline 2px solid #adff2f;
+}
+        /* hover main */
+
+
