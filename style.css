@@ -251,8 +251,8 @@ footer{
     height: 100px;
     background-color: #282828;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    flex-shrink: 0;
     position: fixed;
     bottom: 0;
     z-index: 100;
@@ -262,35 +262,36 @@ footer{
 
 footer img{
     width: 50px;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: -13px;
 }
 
 .icon-sx{
     color: white;
-    width: 25%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+    margin-left: 20px;
+
 }
 
-
 .fa-heart, .fa-older {
-    padding-right: 20px;
+    padding-right: 10px;
 }
 
 .fa-heart{
-    padding-left: 20px;
-    margin-top: 30px;
+    padding-left: 15px;
     color: white;
     font-size: 15px;
 }
 
 .icon-centre{
-    margin-top: 15px;
     color: white;
     font-size: 15px;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    justify-content: center;
+    width: 100%;
+
 }
 
 .audio-buttons, .audio-state{
@@ -299,10 +300,11 @@ footer img{
     justify-content: center;
 }
 
-
-.audio-state{
-    margin-top: 20px;
+.audio-buttons{
+    margin-bottom: 20px;
 }
+
+
 
 #number-sx, #number-dx{
     padding: 5px 5px;
@@ -313,7 +315,6 @@ footer img{
     width: 100%;
     height: 4px;
     border-radius: 20px;
-    margin-top: 15px;
 }
 
 #progress-sound{
@@ -324,25 +325,25 @@ footer img{
 }
 
 .fa-shuffle, .fa-backward-step, .fa-circle-play, .fa-forward-step{
-    padding-right: 20px;
+    padding-right: 10px;
 }
 
 
 .icon-dx{
-    margin-top: 30px;
     color: white;
     font-size: 15px;
-    width: 25%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 20px;
 }
 
 
 .fa-list, .fa-display, .fa-volume-high{
-    padding-right: 20px;
+    padding-right: 10px;
 }
 
-.fa-list{
-    margin-left: 150px;
-}
 
 #sound-icon-dx{
     width: 20%;
@@ -378,6 +379,8 @@ footer img{
     header{
         flex-wrap: wrap;
     }
+
+    
 }
 
 
@@ -410,5 +413,8 @@ footer img{
         padding: 5px;
     }
 
+    footer{
+        width: 100%;
+    }
     
 }
