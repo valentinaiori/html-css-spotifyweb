@@ -144,6 +144,30 @@ hr{
 
 /* main */
 
+    /* header */
+
+header{
+    height: 100px;
+    opacity: 80%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: calc(100% - 260px);
+    text-align: right;
+    padding-top: 30px;
+}
+
+header a{
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 5px 20px;
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+/* /header */
+
 main{
     width: calc(100% - 260px);
     background-color: #141922;
@@ -170,6 +194,11 @@ main{
     font-size: 0.9rem;
     padding-right: 20px;
     margin-bottom: 20px;
+}
+
+.title :hover{
+    text-decoration: underline 2px solid #adff2f;
+
 }
 
 .card{
@@ -213,31 +242,8 @@ h5{
     padding-bottom: 20px;
 }
 
-
-/* header */
-
-header{
-    height: 100px;
-    opacity: 80%;
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: calc(100% - 260px);
-    text-align: right;
-    padding-top: 30px;
-}
-
-header a{
-    color: white;
-    border: 1px solid white;
-    border-radius: 20px;
-    padding: 5px 20px;
-    text-decoration: none;
-    margin-right: 25px;
-}
-
-/* /header */
 /* /main */
+
 
 /* footer */
 
@@ -252,6 +258,7 @@ footer{
     width: 100%;
 }
 
+
 footer img{
     width: 50px;
     margin-left: 20px;
@@ -260,6 +267,8 @@ footer img{
 
 .icon-sx{
     color: white;
+    width: 25%;
+    margin-right: 100px;
 
 }
 
@@ -273,10 +282,36 @@ footer img{
     color: white;
     font-size: 15px;
 }
+
 .icon-centre{
     margin-top: 15px;
     color: white;
     font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.audio-buttons, .audio-state{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.audio-state{
+    margin-top: 20px;
+}
+
+#number-sx, #number-dx{
+    padding: 5px 5px;
+}
+
+#sound-bar{
+    background-color: grey;
+    width: 50%;
+    height: 4px;
+    border-radius: 20px;
+    margin-top: 15px;
 }
 
 .fa-shuffle, .fa-backward-step, .fa-circle-play, .fa-forward-step{
@@ -288,11 +323,21 @@ footer img{
     margin-top: 30px;
     color: white;
     font-size: 15px;
+    width: 25%;
 }
 
 .fa-list, .fa-display, .fa-volume-high{
     padding-right: 20px;
 }
+
+#volume-bar{
+    width: 20%;
+    height: 4px;
+    border-radius: 20px;
+    background-color: grey;
+    border: grey;
+}
+
 /* /footer */
 
 
@@ -303,6 +348,14 @@ footer img{
 @media screen and (max-width:878px) {
     .card-album{
         width: calc(100% / 4);
+    }
+
+    .title{
+        flex-wrap: wrap;
+    }
+
+    header{
+        flex-wrap: wrap;
     }
 }
 
@@ -327,6 +380,14 @@ footer img{
     .card-album{
         width: calc(100% / 2);
     } 
+
+    aside{
+        width: 80px;
+    }
+
+    header a{
+        padding: 5px;
+    }
 
     
 }

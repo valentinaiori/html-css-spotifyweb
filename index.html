@@ -180,26 +180,43 @@
 
         <!-- footer-->
         <footer class="flex">
-            <div class="icon-sx">
-                <img src="img/sinister.jpeg" alt="img-sinister">
-                <span>Sinister</span>
-                <i class="fa-solid fa-heart"></i>
-                <i class="fa-solid fa-folder"></i>
-            </div>
-
-            <div class="icon-centre">
-                <i class="fa-solid fa-shuffle"></i>
-                <i class="fa-solid fa-backward-step"></i>
-                <i class="fa-solid fa-circle-play"></i>
-                <i class="fa-solid fa-forward-step"></i>
-                <i class="fa-solid fa-rotate-right"></i>
-            </div>
-
-            <div class="icon-dx">
-                <i class="fa-solid fa-list"></i>
-                <i class="fa-solid fa-display"></i>
-                <i class="fa-solid fa-volume-high"></i>
-            </div>
+            
+                <div class="icon-sx">
+                    <img src="img/sinister.jpeg" alt="img-sinister">
+                    <span>Sinister</span>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-folder"></i>
+                </div>
+    
+                <div class="icon-centre flex">
+                    <div class="audio-buttons flex">
+                        <i class="fa-solid fa-shuffle"></i>
+                        <i class="fa-solid fa-backward-step"></i>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-solid fa-forward-step"></i>
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </div>
+                    <div class="audio-state flex">
+                        <div id="number-sx">
+                            0:25
+                        </div>
+                        <div id="sound-bar">
+                            <button></button>
+                        </div>
+                        <div id="number-sx">
+                            4:35
+                        </div>
+                    </div>
+                    
+                </div>
+    
+                <div class="icon-dx flex">
+                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-display"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <button id="volume-bar"></button>         
+                </div>
+            
         </footer>
         <!-- /footer--> 
         
