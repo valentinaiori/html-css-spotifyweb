@@ -12,10 +12,13 @@
 </head>
 <body>
     <div class="web-app">
+
+        <!-- aside -->
             <aside>
                 <div class="menu">
-                    <img id="logo-spotify" src="img/logo.svg" alt="Logo-spotify"> 
-
+                    <img class="xs-hidden" src="img/logo.svg" alt="Logo-spotify"> 
+                    <img class="xs-show" src="img/logo-small.svg" alt="logo-small-spotify">
+                
                     <a class="flex" href="#">
                         <img id="home-spotify" src="img/home.svg" alt="Home-spotify">
                         <span>Home</span>
@@ -28,8 +31,8 @@
                         <img id="libreria-spotify" src="img/libreria.svg" alt="Libreria-spotify">
                         <span>La tua libreria</span>
                     </a>
-                        
-                    </div>
+                </div>
+
                 <div class="playlist">
                     <h4>PLAYLIST</h4>
                     <a class="flex" href="#">
@@ -44,23 +47,30 @@
                     <a class="flex" href="#">Nome Playlist</a>
                     <a class="flex" href="#">Nome Playlist</a>
                 </div>
-                    <div class="profile">
-                        <a class="flex" href="#">
-                            <img id="download-logo" src="img/download.svg" alt="download-logo">
-                            <span>Installa app</span>
-                        </a>
-                        <hr>
-                        <a class="flex" href="#">
-                            <img id="profile-logo" src="img/profile.svg" alt="Profile">
-                            <span>John Doe</span>
-                        </a>
-                    </div>
-        </aside>
 
+                <div class="profile">
+                    <a class="flex" href="#">
+                        <img id="download-logo" src="img/download.svg" alt="download-logo">
+                        <span>Installa app</span>
+                    </a>
+                    <hr>
+                    <a class="flex" href="#">
+                        <img id="profile-logo" src="img/profile.svg" alt="Profile">
+                        <span>John Doe</span>
+                    </a>
+                </div>
+            </aside>
+        <!-- /aside -->
+
+        <!-- main -->
         <main>
+
+            <!-- header-->
              <header>
                 <a href="#">EFFETTUA L'UPGRADE</a>
             </header>
+            <!-- /header-->
+
             <div id="album-container">
                 <div class="title flex">
                     <a href="#">IN EVIDENZA</a>
@@ -165,11 +175,14 @@
                 
                 </div>       
         </main>
+        <!-- /main -->
+
 
         <!-- footer-->
         <footer class="flex">
             <div class="icon-sx">
                 <img src="img/sinister.jpeg" alt="img-sinister">
+                <span>Sinister</span>
                 <i class="fa-solid fa-heart"></i>
                 <i class="fa-solid fa-folder"></i>
             </div>
@@ -190,10 +203,6 @@
         </footer>
         <!-- /footer--> 
         
-        </div>
-        
-        
-
-        
+    </div>
 </body>
 </html>

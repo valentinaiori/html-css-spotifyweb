@@ -27,12 +27,19 @@ aside{
     padding: 10px;
 }
 
-#logo-spotify{
+.xs-show{
+    width: 20px;
+    margin-left: 20px;
+    padding-top: 20px;
+    display: none;
+}
+
+.xs-hidden{
     width: 150px;
     padding-left: 20px;
     margin-top: 20px;
     margin-bottom: 10px;
-    color: #a3a3a3;
+    
 }
 
 .menu a{
@@ -92,14 +99,13 @@ h4{
     color: #a3a3a3;
     display: flex;
     flex-direction: row;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-left: 20px;
     font-size: 0.8rem;
 }
 
 .profile{
-    margin-top: 75px;
-    
+    margin-top: 100px;
 }
 
 #profile-logo{
@@ -219,7 +225,6 @@ header{
     width: calc(100% - 260px);
     text-align: right;
     padding-top: 30px;
-    
 }
 
 header a{
@@ -231,12 +236,7 @@ header a{
     margin-right: 25px;
 }
 
-
-
 /* /header */
-
-
-
 /* /main */
 
 /* footer */
@@ -294,3 +294,39 @@ footer img{
     padding-right: 20px;
 }
 /* /footer */
+
+
+/* media query */
+
+
+
+@media screen and (max-width:878px) {
+    .card-album{
+        width: calc(100% / 4);
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .card-album{
+        width: calc(100% / 2);
+    } 
+}
+
+
+@media screen and (max-width: 480px){
+
+    .xs-hidden, .playlist, .profile, .menu span{
+        display: none;
+    }
+
+    .xs-show{
+        display: initial;
+    }
+
+    .card-album{
+        width: calc(100% / 2);
+    } 
+
+    
+}
